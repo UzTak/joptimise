@@ -13,8 +13,8 @@ and Snopt.jl (https://github.com/byuflowlab/Snopt.jl)
 #     # Set up library path
 # end
 
-#const snoptlib = ENV["SNOPT_SO"]#"libsnopt7"
-const snoptlib = joinpath(dirname(@__FILE__), "snopt/libsnopt7/libsnopt7.so")
+# const snoptlib = ENV["SNOPT_SO"] #"libsnopt7"
+const snoptlib = joinpath(dirname(@__FILE__), "snopt/libsnopt7_cpp/libsnopt7_cpp.so")  # for wsl, need cpp files? 
 
 
 #const snoptlib = joinpath(dirname(@__FILE__), "../deps/src/libsnopt")

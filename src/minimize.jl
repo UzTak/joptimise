@@ -61,7 +61,7 @@ function minimize(func!::Function, x0::Vector, ng::Int; kwargs...)
     verbosity   = _assign_from_kwargs(Dict(kwargs), :verbosity, 0)
 
     # snopt-specific settings
-    lencw       = _assign_from_kwargs(Dict(kwargs), :lencw, 500)
+    lencw       = _assign_from_kwargs(Dict(kwargs), :lencw, 5000)
     iSumm       = _assign_from_kwargs(Dict(kwargs), :iSumm, 6)   # print to screen if 6
 
     # initialize number of decision variables
